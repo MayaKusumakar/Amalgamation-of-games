@@ -13,9 +13,9 @@ public class Apple{
     c = color(255,0,0);
     radius = 50;
     
-    int x = (int)random(50, width-50);
-    int y = (int)random(50,height-50);
-    loc = new PVector(x,y);
+    int x = (int)random(0,width/30);
+    int y = (int)random(0,height/30);
+    loc = new PVector(x*30,y*30);
     
     img = loadImage("apple2.png");
   }
@@ -23,7 +23,7 @@ public class Apple{
   public void display(){
     
     //image(img,loc.x,loc.y);
-    img.resize(50,50);
+    img.resize(30,30);
     image(img,loc.x,loc.y);
     
   
